@@ -59,6 +59,32 @@ This Repo contians Java and DSA questions
 
     }
 
+ #Topic 2: CONDITIONAL STATEMENTS QUESTIONS
+ 
+ Question1: WriteaJavaprogramtogetanumberfromtheuserandprintwhether it is
+ positive or negative.
+
+ solution:
+ 
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int number = sc.nextInt();
+
+        if (number > 0) {
+            System.out.println("Positive number");
+        } else if (number < 0) {
+            System.out.println("Negative number");
+        } else {
+            System.out.println("Zero");
+        }
+
+        sc.close();
+    }
+
+
+
 
 
  
