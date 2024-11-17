@@ -24,3 +24,26 @@ public class Average {
       System.out.println("Average is : " + var5);
    }
 }
+
+ Question 2: In a program, input the side of a square. You have to output the area of the
+ square.
+ (Hint : area of a square is (side x side))
+
+
+ solution:
+
+ 
+import java.util.Scanner;
+
+public class AreaSquare {
+   public AreaSquare() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      int var2 = var1.nextInt();
+      int var3 = var2 * var2;
+      System.out.println("Area of Square is :" + var3);
+   }
+}
+
