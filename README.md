@@ -136,8 +136,24 @@ Question3: Writea Javaprogramtoinputweeknumber(1-7)andprintdayofweekname
         }
     }
 
+   
+Question 4 :What will be the value of x & y in thefollowing program
+ 
+public class Solution {
+ public static void main(String args[]) {
+ int a = 63, b = 36;
+ boolean x = (a < b ) ? true : false;
+ int y= (a > b ) ? a : b;
+ }
+ }
+
+Answer is: x = false, y = 63
 
 
+Question5: WriteaJavaprogramthattakesayearfromtheuserandprintwhetherthat
+ year is a leap year or not.
+
+ 
 
 
  
