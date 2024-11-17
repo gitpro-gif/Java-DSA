@@ -98,8 +98,62 @@ Question2: FinishthefollowingcodesothatitprintsYouhaveafeverifyourtemperature
         }
     }
 
+Question3: Writea Javaprogramtoinputweeknumber(1-7)andprintdayofweekname
+ using switch case.
 
 
+
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 1-7 to print number");
+        int week = sc.nextInt();
+
+        switch (week) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednasday");
+                break;
+            case 4:
+                System.out.println("Thrusday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                break;
+        }
+    }
+
+   
+Question 4 :What will be the value of x & y in thefollowing program
+ 
+public class Solution {
+ public static void main(String args[]) {
+ int a = 63, b = 36;
+ boolean x = (a < b ) ? true : false;
+ int y= (a > b ) ? a : b;
+ }
+ }
+
+Answer is: x = false, y = 63
+
+
+Question5: WriteaJavaprogramthattakesayearfromtheuserandprintwhetherthat
+ year is a leap year or not.
+
+ 
 
 
  
