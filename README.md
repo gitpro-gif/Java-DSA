@@ -47,3 +47,30 @@ public class AreaSquare {
    }
 }
 
+ Question 3: Enter cost of 3 items from the user (using float data type)- a pencil, a pen and
+ an eraser. You have to output the total cost of the items back to the user as their bill.
+ (Add on : You can also try adding 18% gst tax to the items in the bill as an advanced problem)
+
+ solution:
+
+import java.util.Scanner;
+
+public class Gst {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        float Pencil = sc.nextFloat();
+        float Pen = sc.nextFloat();
+        float Eraser = sc.nextFloat();
+
+        float total = (Pencil + Pen + Eraser);
+        System.out.println("Toatal of 3 items are :" + total);
+
+        float FinalToatl = total + (0.18f * total);
+        System.out.println("Final cost of 3 product including gst is :" + FinalToatl);
+
+    }
+}
+
+
+ 
+
