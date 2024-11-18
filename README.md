@@ -173,6 +173,102 @@ Solution:
 
 
  
+#Topic 3: LOOPS
+
+Question 1 : How many times 'Hello' is printed?
+solution:
+
+
+
+    public static void main(String args[]) {
+        for(int i =1; i <= 5; i++) {
+            System.out.println("Hello");
+            i+=2;
+        }
+    }
+
+ 
+ Question 2: Write a program that reads a set of integers ,and then prints the sum of the
+ even and odd integers.
+solution:
+
+
+
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number;
+        int choice;
+        int evenSum = 0;
+        int oddSum = 0;
+
+        do {
+            System.out.println("Enter the number:");
+            number = sc.nextInt();
+
+            
+            if (number % 2 == 0) {
+                evenSum += number;
+            } else {
+                oddSum += number;
+            }
+
+            
+            System.out.println("Do you want to continue? Press 1 for yes or 0 for no:");
+            choice = sc.nextInt();
+        } while (choice == 1);
+
+        
+        System.out.println("Sum of even numbers: " + evenSum);
+        System.out.println("Sum of odd numbers: " + oddSum);
+
+
+        sc.close();
+    }
+
+
+Question 3: Write a program to find the factorialof any number entered by the user.
+ (Hint : factorialofanumbern=n*(n-1)*(n-2)*(n-3)*……*1andexistsforpositivenumbers
+ only. We write factorial as n!
+ So, factorial of 0! = 1, 1! = 1, 2! = 2, 3! = 6, 4! = 24 and so on.
+ Note - Please do not confuse factorial with NOT EQUAL TO operator, they are not the same)
+ 
+solution:
+
+
+
+
+    public static void main(String args[]) {
+        System.out.println("Enter any number to find Factorial");
+        Scanner sc = new Scanner(System.in);
+        int fact = 1;
+        int num = sc.nextInt();
+
+        for(int i = 1; i <= num; i++) {
+            fact *= i;
+        }
+
+        System.out.println("Factorial of number is: " + fact);
+
+
+    }
+ Question4: Write a program to print the multiplication table of a number N, entered by the
+ user.
+ solution:
+
+
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter any number:");
+        int num = sc.nextInt();
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(num + "X" + i + "=" + num*i);
+        }
+    }
+
+
 
  
 
